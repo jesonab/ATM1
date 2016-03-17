@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class trans
+    public class trans
     {
         private DateTime transDate;
         private string cardID;
