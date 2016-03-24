@@ -21,14 +21,7 @@ namespace DAL
             strSql.Append(" where LoginID='" + name + "' and LoginPWD='" + pwd + "'");
             user model = new user();
             DataSet ds = DbHelperSQL.Query(strSql.ToString());
-            if (ds.Tables[0].Rows.Count > 0)
-            {
-                return DataRowToModel(ds.Tables[0].Rows[0]);
-            }
-            else
-            {
-                return null;
-            }
+            return null;
         }
     }
 }
